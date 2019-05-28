@@ -1,0 +1,46 @@
+<!-- addInventory.html                 Christopher DeRoche -->
+<!-- ================================== -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>DeRoche Inventory Management System (DIMS)</title>
+    </head>
+    <body onload="load(); checkForNan()">
+        <h1 id="mainTitle">DeRoche Inventory Management System</h1>
+        
+        <hr>
+        
+        <table id="addInventoryTable">
+            <tr>
+                <th>Item: </th>
+                <td>
+                <select id="addInventorySelect">
+                    <option value="box">Box</option>
+                    <option value="bin">Bin</option>
+                    <option value="pallet">Pallet</option>
+                    <option value="forklift">Forklift</option>
+                </select>
+                </td>
+                <!-- <td><input id="addInventoryBoxName" type="text"></td> -->
+            </tr>
+            <tr>
+                <th>Quantity: </th>
+                <td><input id="addInventoryBoxQuantity" type="number"></td>
+            </tr>
+            <tr>
+                <th><button type="button" id="addInventoryButton" onClick="addInventory()">Add To Inventory</button></th>
+                <th>Current Quantity: <output id="addInventoryOutput"></output></th>
+            </tr>
+        </table>
+        
+    </body>
+    
+    <footer>
+        <hr>
+        <br>
+        <button type="button" id="backToHome" onClick="backToHome()">Back</button>
+    </footer>
+</html>

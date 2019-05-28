@@ -1,0 +1,45 @@
+<!-- searchInventory.html                 Christopher DeRoche -->
+<!-- ================================== -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>DeRoche Inventory Management System (DIMS)</title>
+    </head>
+    <body onload="load(); searchEntireInventory(); checkForNan()">
+        <h1 id="mainTitle">DeRoche Inventory Management System</h1>
+        
+        <hr>
+        
+        <table id="searchInventoryTable">
+            <!--<tr>
+                <th><button type="button" id="searchEntireInventoryButton" onClick="searchEntireInventory()">Search Entire Inventory</button></th>
+            </tr> -->
+            <tr>
+                <th>Box(es): </th>
+                <td> <output id="searchBoxOutput"></output> </td>
+            </tr>
+            <tr>
+                <th>Bin(s): </th>
+                <td> <output id="searchBinOutput"></output> </td>
+            </tr>
+            <tr>
+                <th>Pallet(s): </th>
+                <td> <output id="searchPalletOutput"></output> </td>
+            </tr>
+            <tr>
+                <th>Forklift(s): </th>
+                <td> <output id="searchForkliftOutput"></output> </td>
+            </tr>
+        </table>
+        
+    </body>
+    
+    <footer>
+        <hr>
+        <br>
+        <button type="button" id="backToHome" onClick="backToHome()">Back</button>
+    </footer>
+</html>
